@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cvodes\cvodes.h" />
+    <ClInclude Include="include\cvodes\cvodes_band.h" />
+    <ClInclude Include="include\cvodes\cvodes_bandpre.h" />
+    <ClInclude Include="include\cvodes\cvodes_bbdpre.h" />
+    <ClInclude Include="include\cvodes\cvodes_dense.h" />
+    <ClInclude Include="include\cvodes\cvodes_diag.h" />
+    <ClInclude Include="include\cvodes\cvodes_direct.h" />
+    <ClInclude Include="include\cvodes\cvodes_klu.h" />
+    <ClInclude Include="include\cvodes\cvodes_lapack.h" />
+    <ClInclude Include="include\cvodes\cvodes_sparse.h" />
+    <ClInclude Include="include\cvodes\cvodes_spbcgs.h" />
+    <ClInclude Include="include\cvodes\cvodes_spgmr.h" />
+    <ClInclude Include="include\cvodes\cvodes_spils.h" />
+    <ClInclude Include="include\cvodes\cvodes_sptfqmr.h" />
+    <ClInclude Include="include\cvodes\cvodes_superlumt.h" />
+    <ClInclude Include="include\nvector\nvector_openmp.h" />
+    <ClInclude Include="include\nvector\nvector_parallel.h" />
+    <ClInclude Include="include\nvector\nvector_pthreads.h" />
+    <ClInclude Include="include\nvector\nvector_serial.h" />
+    <ClInclude Include="include\sundials\sundials_band.h" />
+    <ClInclude Include="include\sundials\sundials_config.h" />
+    <ClInclude Include="include\sundials\sundials_dense.h" />
+    <ClInclude Include="include\sundials\sundials_direct.h" />
+    <ClInclude Include="include\sundials\sundials_fnvector.h" />
+    <ClInclude Include="include\sundials\sundials_iterative.h" />
+    <ClInclude Include="include\sundials\sundials_klu_impl.h" />
+    <ClInclude Include="include\sundials\sundials_lapack.h" />
+    <ClInclude Include="include\sundials\sundials_math.h" />
+    <ClInclude Include="include\sundials\sundials_nvector.h" />
+    <ClInclude Include="include\sundials\sundials_pcg.h" />
+    <ClInclude Include="include\sundials\sundials_sparse.h" />
+    <ClInclude Include="include\sundials\sundials_spbcgs.h" />
+    <ClInclude Include="include\sundials\sundials_spfgmr.h" />
+    <ClInclude Include="include\sundials\sundials_spgmr.h" />
+    <ClInclude Include="include\sundials\sundials_sptfqmr.h" />
+    <ClInclude Include="include\sundials\sundials_superlumt_impl.h" />
+    <ClInclude Include="include\sundials\sundials_types.h" />
+    <ClInclude Include="src\cvodes\cvodes_bandpre_impl.h" />
+    <ClInclude Include="src\cvodes\cvodes_bbdpre_impl.h" />
+    <ClInclude Include="src\cvodes\cvodes_diag_impl.h" />
+    <ClInclude Include="src\cvodes\cvodes_direct_impl.h" />
+    <ClInclude Include="src\cvodes\cvodes_impl.h" />
+    <ClInclude Include="src\cvodes\cvodes_sparse_impl.h" />
+    <ClInclude Include="src\cvodes\cvodes_spils_impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cvodes\cvodea.c" />
+    <ClCompile Include="src\cvodes\cvodea_io.c" />
+    <ClCompile Include="src\cvodes\cvodes.c" />
+    <ClCompile Include="src\cvodes\cvodes_band.c" />
+    <ClCompile Include="src\cvodes\cvodes_bandpre.c" />
+    <ClCompile Include="src\cvodes\cvodes_bbdpre.c" />
+    <ClCompile Include="src\cvodes\cvodes_dense.c" />
+    <ClCompile Include="src\cvodes\cvodes_diag.c" />
+    <ClCompile Include="src\cvodes\cvodes_direct.c" />
+    <ClCompile Include="src\cvodes\cvodes_io.c" />
+    <ClCompile Include="src\cvodes\cvodes_klu.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_lapack.c" />
+    <ClCompile Include="src\cvodes\cvodes_sparse.c" />
+    <ClCompile Include="src\cvodes\cvodes_spbcgs.c" />
+    <ClCompile Include="src\cvodes\cvodes_spgmr.c" />
+    <ClCompile Include="src\cvodes\cvodes_spils.c" />
+    <ClCompile Include="src\cvodes\cvodes_sptfqmr.c" />
+    <ClCompile Include="src\cvodes\cvodes_superlumt.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\nvec_openmp\nvector_openmp.c" />
+    <ClCompile Include="src\nvec_par\nvector_parallel.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\nvec_pthreads\nvector_pthreads.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\nvec_ser\nvector_serial.c" />
+    <ClCompile Include="src\sundials\sundials_band.c" />
+    <ClCompile Include="src\sundials\sundials_dense.c" />
+    <ClCompile Include="src\sundials\sundials_direct.c" />
+    <ClCompile Include="src\sundials\sundials_iterative.c" />
+    <ClCompile Include="src\sundials\sundials_math.c" />
+    <ClCompile Include="src\sundials\sundials_nvector.c" />
+    <ClCompile Include="src\sundials\sundials_pcg.c" />
+    <ClCompile Include="src\sundials\sundials_sparse.c" />
+    <ClCompile Include="src\sundials\sundials_spbcgs.c" />
+    <ClCompile Include="src\sundials\sundials_spfgmr.c" />
+    <ClCompile Include="src\sundials\sundials_spgmr.c" />
+    <ClCompile Include="src\sundials\sundials_sptfqmr.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DEA5AFB-DACD-4FF0-A677-FC9E8B17684C}</ProjectGuid>
+    <RootNamespace>CVODES_2_8_2</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>Intermediate$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>Intermediate$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)\src\cvodes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)\src\cvodes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

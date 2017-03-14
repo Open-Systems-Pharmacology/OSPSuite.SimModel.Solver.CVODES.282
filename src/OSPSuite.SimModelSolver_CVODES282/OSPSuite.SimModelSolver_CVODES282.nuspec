@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <description>SimModel Solver</description>
+    <id>OSPSuite.SimModelSolver_CVODES282</id>
+    <version>$version$</version>
+    <title>OSPSuite.SimModelSolver_CVODES282</title>
+    <authors>Open-Systems-Pharmacology</authors>
+    <owners>Open-Systems-Pharmacology</owners>
+    <projectUrl>https://github.com/Open-Systems-Pharmacology/OSPSuite.SimModelSolver_CVODES282</projectUrl>
+    <licenseUrl>https://github.com/Open-Systems-PharmacologyOSPSuite.SimModelSolver_CVODES282/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://github.com/Open-Systems-Pharmacology/Suite/blob/master/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright © 2017 - Open Systems Pharmacology Community</copyright>
+    <tags>open-systems-pharmacology</tags>
+  </metadata>
+  <files>
+    <file src="..\..\Build\Debug\OSPSuite.SimModelSolver_CVODES282.dll" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Debug" />
+    <file src="..\..\Build\Debug\OSPSuite.SimModelSolver_CVODES282.lib" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Debug" />
+    <file src="..\..\Build\Debug\OSPSuite.SimModelSolver_CVODES282.pdb" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Debug" />
+    
+    <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.dll" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Release" />
+    <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.lib" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Release" />
+    <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.pdb" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Release" />
+
+    <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.dll" target="lib\net45" />
+    <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.lib" target="lib\net45" />
+    <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.pdb" target="lib\net45" />
+  
+    <file src="include\**\*.h" target="OSPSuite.SimModelSolver_CVODES282\include" />
+    <file src="..\OSPSuite.SimModelSolverBase\src\OSPSuite.SimModelSolverBase\include\**\*.h" target="OSPSuite.SimModelSolver_CVODES282\include" />
+  
+  </files>
+</package>

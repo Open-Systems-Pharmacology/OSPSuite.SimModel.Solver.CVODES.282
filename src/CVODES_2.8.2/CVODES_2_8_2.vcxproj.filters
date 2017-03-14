@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\cvodes\cvodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_band.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_bandpre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_bbdpre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_dense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_diag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_direct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_klu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_lapack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_sparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_spbcgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_spgmr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_spils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_sptfqmr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvodes\cvodes_superlumt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nvector\nvector_openmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nvector\nvector_parallel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nvector\nvector_pthreads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nvector\nvector_serial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_band.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_dense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_direct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_fnvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_iterative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_klu_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_lapack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_nvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_pcg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_sparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_spbcgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_spfgmr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_spgmr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_sptfqmr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_superlumt_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sundials\sundials_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_bandpre_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_bbdpre_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_diag_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_direct_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_sparse_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cvodes\cvodes_spils_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cvodes\cvodea.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodea_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_band.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_bandpre.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_bbdpre.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_dense.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_diag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_direct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_klu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_lapack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_sparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_spbcgs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_spgmr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_spils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_sptfqmr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cvodes\cvodes_superlumt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nvec_openmp\nvector_openmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nvec_par\nvector_parallel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nvec_pthreads\nvector_pthreads.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nvec_ser\nvector_serial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_band.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_dense.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_direct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_iterative.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_math.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_nvector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_pcg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_sparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_spbcgs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_spfgmr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_spgmr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sundials\sundials_sptfqmr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

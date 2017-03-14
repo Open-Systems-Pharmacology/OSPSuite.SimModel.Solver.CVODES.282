@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{158EC255-32BB-4988-A92E-06D0AD5D0A59}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		appveyor.yml = appveyor.yml
+		packages.config = packages.config
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CVODES_2_8_2", "src\CVODES_2.8.2\CVODES_2_8_2.vcxproj", "{9DEA5AFB-DACD-4FF0-A677-FC9E8B17684C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSPSuite.SimModelSolver_CVODES282", "src\OSPSuite.SimModelSolver_CVODES282\SimModelSolver_CVODES_2_8_2.vcxproj", "{6BDCA452-A027-4F64-908F-E1E9154F38EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSPSuite.SimModelSolver_CVODES282.Tests", "tests\OSPSuite.SimModelSolver_CVODES2.8.2.Tests\SimModelSolver_CVODES2.8.2.Specs.vcxproj", "{218A251A-3BAE-4C44-8AA4-FA8A3FC4F264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DEA5AFB-DACD-4FF0-A677-FC9E8B17684C}.Debug|x86.ActiveCfg = Debug|Win32
+		{9DEA5AFB-DACD-4FF0-A677-FC9E8B17684C}.Debug|x86.Build.0 = Debug|Win32
+		{9DEA5AFB-DACD-4FF0-A677-FC9E8B17684C}.Release|x86.ActiveCfg = Release|Win32
+		{9DEA5AFB-DACD-4FF0-A677-FC9E8B17684C}.Release|x86.Build.0 = Release|Win32
+		{6BDCA452-A027-4F64-908F-E1E9154F38EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{6BDCA452-A027-4F64-908F-E1E9154F38EE}.Debug|x86.Build.0 = Debug|Win32
+		{6BDCA452-A027-4F64-908F-E1E9154F38EE}.Release|x86.ActiveCfg = Release|Win32
+		{6BDCA452-A027-4F64-908F-E1E9154F38EE}.Release|x86.Build.0 = Release|Win32
+		{218A251A-3BAE-4C44-8AA4-FA8A3FC4F264}.Debug|x86.ActiveCfg = Debug|Win32
+		{218A251A-3BAE-4C44-8AA4-FA8A3FC4F264}.Debug|x86.Build.0 = Debug|Win32
+		{218A251A-3BAE-4C44-8AA4-FA8A3FC4F264}.Release|x86.ActiveCfg = Release|Win32
+		{218A251A-3BAE-4C44-8AA4-FA8A3FC4F264}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
