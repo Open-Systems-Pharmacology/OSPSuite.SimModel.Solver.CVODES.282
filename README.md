@@ -16,7 +16,7 @@ nuget restore packages.config -PackagesDirectory packages
 
 
 ## Code Status
-[![NuGet version](https://img.shields.io/nuget/v/OSPSuite.SimModel.Solver.CVODES.282.svg?style=flat)](https://www.nuget.org/packages/OSPSuite.SimModel.Solver.CVODES.282)
+[![NuGet version](https://img.shields.io/nuget/v/OSPSuite.SimModelSolver_CVODES282.svg?style=flat)](https://www.nuget.org/packages/OSPSuite.SimModelSolver_CVODES282)
 [![Build status](https://ci.appveyor.com/api/projects/status/bugqfsf0bsfxrfai/branch/master?svg=true&passingText=master%20-%20passing)](https://ci.appveyor.com/project/open-systems-pharmacology-ci/ospsuite-simmodel-solver-cvodes-282/branch/master)
 
 ## Code of conduct
