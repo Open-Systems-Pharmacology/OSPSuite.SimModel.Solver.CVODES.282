@@ -23,6 +23,10 @@
     <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.lib" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Release" />
     <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.pdb" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x86\Release" />
 
+    <file src="..\..\Build\ReleaseX64\OSPSuite.SimModelSolver_CVODES282.dll" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x64\Release" />
+    <file src="..\..\Build\ReleaseX64\OSPSuite.SimModelSolver_CVODES282.lib" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x64\Release" />
+    <file src="..\..\Build\ReleaseX64\OSPSuite.SimModelSolver_CVODES282.pdb" target="OSPSuite.SimModelSolver_CVODES282\bin\native\x64\Release" />
+	
     <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.dll" target="lib\net45" />
     <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.lib" target="lib\net45" />
     <file src="..\..\Build\Release\OSPSuite.SimModelSolver_CVODES282.pdb" target="lib\net45" />
