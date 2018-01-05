@@ -1,7 +1,7 @@
 #ifndef __SimModelSolver_CVODES282_H_
 #define __SimModelSolver_CVODES282_H_
 
-#ifdef WIN32
+#ifdef _WINDOWS
 #pragma warning(disable:4786)
 #endif
 
@@ -15,7 +15,7 @@
 #include "SimModelSolverBase/SimModelSolverBase.h"
 #include "SimModelSolverBase/SimModelSolverErrorData.h"
 
-#ifdef WIN32
+#ifdef _WINDOWS
 #define CVODES282_EXPORT __declspec(dllexport)
 #endif
 #ifdef linux

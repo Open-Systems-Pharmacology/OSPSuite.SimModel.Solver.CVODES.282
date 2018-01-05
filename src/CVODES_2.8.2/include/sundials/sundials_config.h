@@ -14,7 +14,7 @@
  *------------------------------------------------------------------
  */
 
-#ifdef WIN32
+#ifdef _WINDOWS
 #pragma warning(disable : 4996)
 #endif
 
@@ -92,7 +92,7 @@
  * In all other cases (other platforms or static libraries under
  * Windows), the SUNDIALS_EXPORT macro is empty
  */
-#ifdef WIN32
+#ifdef _WINDOWS
 #define SUNDIALS_EXPORT __declspec(dllexport)
 #else
 #define SUNDIALS_EXPORT

@@ -11,7 +11,7 @@ version: '$(major).$(minor).$(release).{build}'
 build_script:
   - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Debug;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Release;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-  - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=ReleaseX64;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Release;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 cache:
   - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
@@ -30,7 +30,8 @@ after_build:
 
 test:
   assemblies:
-  - '**\*.Tests.*.dll'
+  - '**\*.Tests.Release.Win32.dll'
+  - '**\*.Tests.Release.x64.dll'
 
 skip_commits:
   files:
