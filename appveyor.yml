@@ -3,7 +3,7 @@ image: Visual Studio 2017
 environment:
   major: 3
   minor: 0
-  release: 0
+  release: 1
   app_version: '$(major).$(minor).$(release).$(APPVEYOR_BUILD_NUMBER)'
 
 version: '$(major).$(minor).$(release).{build}'
@@ -11,6 +11,7 @@ version: '$(major).$(minor).$(release).{build}'
 build_script:
   - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Debug;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Release;Platform=x86 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Debug;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   - cmd: msbuild OSPSuite.SimModelSolver.CVODES_2.8.2.sln /property:Configuration=Release;Platform=x64 /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 cache:
@@ -20,6 +21,13 @@ before_build:
   - nuget sources add -name bddhelper -source https://ci.appveyor.com/nuget/ospsuite-bddhelper 
   - nuget install packages.config -OutputDirectory packages # cannot use automatic artifact publish because it's not recognized in a C++/CLI project
   - ps: (get-content src\OSPSuite.SimModelSolver_CVODES282\version.h) | foreach-object {$_ -replace "RELEASE 0", "RELEASE $env:RELEASE" -replace "MAJOR 0", "MAJOR $env:MAJOR" -replace "MINOR 0", "MINOR $env:MINOR" -replace "BUILD 0", "BUILD $env:APPVEYOR_BUILD_NUMBER"} | set-content src\OSPSuite.SimModelSolver_CVODES282\version.h
+
+skip_branch_with_pr: true
+
+skip_tags: true
+
+pull_requests: 
+  do_not_increment_build_number: true     
 
 install:
   - cmd: git submodule update --init --recursive
